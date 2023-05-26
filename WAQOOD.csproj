@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5AFEF513-A152-44C5-A6C8-75FB58DDCBCA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WAQOOD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WAQOOD.Properties\Resources.cs" />
+    <Compile Include="WAQOOD.Properties\Settings.cs" />
+    <Compile Include="WAQOOD\CarCodingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WAQOOD\CompanyForm.cs" />
+    <Compile Include="WAQOOD\CompRepOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WAQOOD\CompReportForm.cs" />
+    <Compile Include="WAQOOD\ConfirmForm.cs" />
+    <Compile Include="WAQOOD\IssueForm.cs" />
+    <Compile Include="WAQOOD\LogonForm.cs" />
+    <Compile Include="WAQOOD\MainForm.cs" />
+    <Compile Include="WAQOOD\MobileLogForm.cs" />
+    <Compile Include="WAQOOD\PrciceForm.cs" />
+    <Compile Include="WAQOOD\Program.cs" />
+    <Compile Include="WAQOOD\Regn.cs" />
+    <Compile Include="WAQOOD\SouthTransForm.cs" />
+    <Compile Include="WAQOOD\StaPrivForm.cs" />
+    <Compile Include="WAQOOD\StationForm.cs" />
+    <Compile Include="WAQOOD\TransForm.cs" />
+    <Compile Include="WAQOOD\UsersForm.cs" />
+    <Compile Include="WAQOOD\WaqoodReportForm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WAQOOD.Properties\Resources.resx" />
+    <EmbeddedResource Include="WAQOOD\ConfirmForm.resx" />
+    <EmbeddedResource Include="WAQOOD\IssueForm.resx" />
+    <EmbeddedResource Include="WAQOOD\LogonForm.resx" />
+    <EmbeddedResource Include="WAQOOD\MainForm.resx" />
+    <EmbeddedResource Include="WAQOOD\SouthTransForm.resx" />
+    <EmbeddedResource Include="WAQOOD\TransForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

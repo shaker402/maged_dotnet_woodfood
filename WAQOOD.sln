@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAQOOD", "WAQOOD.csproj", "{5AFEF513-A152-44C5-A6C8-75FB58DDCBCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AFEF513-A152-44C5-A6C8-75FB58DDCBCA}.Debug|x64.ActiveCfg = Debug|x64
+		{5AFEF513-A152-44C5-A6C8-75FB58DDCBCA}.Debug|x64.Build.0 = Debug|x64
+		{5AFEF513-A152-44C5-A6C8-75FB58DDCBCA}.Release|x64.ActiveCfg = Release|x64
+		{5AFEF513-A152-44C5-A6C8-75FB58DDCBCA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9668C41C-4F2E-451F-AB93-5F6CE8E7E8B4}
+	EndGlobalSection
+EndGlobal
